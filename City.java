@@ -38,9 +38,9 @@ public class City {
                                 }
                                 else{
                                     try {
-                                        String direction[] = new String[3];
+                                        String direction[] = new String[2];
                                         direction = wayFinder.data[textLenght-1].split(" ");
-                                        if (wayFinder.data[textLenght-1].split(" ").length != 3) {
+                                        if (wayFinder.data[textLenght-1].split(" ").length != 2) {
                                             direction[4] = "a";
                                         }
                                         this.textLenght = textLenght;

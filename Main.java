@@ -7,9 +7,11 @@ public class Main {
         System.out.print("Enter input data file text: ");
         String fileName = sc.nextLine();
 
-        WayFinder wayFinder = new WayFinder();
-        CountryMap countryMap = new CountryMap();
+        WayFinder wayFinder = new WayFinder(null, null);
         City city = new City(wayFinder);
+        CountryMap countryMap = new CountryMap(city);
+        wayFinder.city = city;
+        wayFinder.countryMap = countryMap;
 
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
@@ -25,6 +27,8 @@ public class Main {
         sc.close();
         wayFinder.printData();
         city.city();
+        countryMap.countryMap();
+        wayFinder.wayFinder();
         
     }
 }
