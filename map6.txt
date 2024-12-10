@@ -1,0 +1,34 @@
+15
+A B C D E F G H I J K L M N O
+30
+A B 10
+A C 15
+B D 12
+B E 15
+C F 10
+D G 10
+E H 12
+F G 5
+F I 15
+G J 5
+H K 20
+I L 25
+J M 8
+K N 10
+L O 18
+M N 12
+N O 10
+A F 50
+B H 40
+C J 30
+E I 35
+H M 25
+I N 22
+D K 18
+G L 15
+A O 60
+A H 45
+D L 30
+F N 20
+C O 55
+A O

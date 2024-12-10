@@ -1,0 +1,3 @@
+--Minimum way direction--
+A->C->E
+Total time:50

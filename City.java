@@ -33,15 +33,15 @@ public class City {
                             String ways[][] = new String[countOfWay][3];
                             for (int i = 0; i < countOfWay; i++) {
                                 ways[i] = wayFinder.data[3+i].split(" ");
-                                if (wayFinder.data[3+i].split(" ").length<3) {
-                                    ways[i] = wayFinder.data[1].split(" ");
+                                if (wayFinder.data[3+i].split(" ").length != 3) {
+                                    throw new IllegalArgumentException("Invalid path data at line " + (3+i));
                                 }
                                 else{
                                     try {
                                         String direction[] = new String[2];
                                         direction = wayFinder.data[textLenght-1].split(" ");
                                         if (wayFinder.data[textLenght-1].split(" ").length != 2) {
-                                            direction[4] = "a";
+                                            throw new IllegalArgumentException("Invalid direction format.");
                                         }
                                         this.textLenght = textLenght;
                                         this.cities = cities;

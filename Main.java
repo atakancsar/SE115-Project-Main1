@@ -13,6 +13,16 @@ public class Main {
         wayFinder.city = city;
         wayFinder.countryMap = countryMap;
 
+        try(BufferedReader br = new BufferedReader(new FileReader(fileName))){
+            String line;
+            int sizeOfText = 0;
+            while ((line= br.readLine()) != null) {
+                sizeOfText++;
+            }
+            String textDataDemo[] = new String[sizeOfText + 1];
+            wayFinder.textData = textDataDemo;
+        }catch(Exception e){System.out.println("File read error. "+ e.getMessage());}
+
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
             String line;
             int index = 0;

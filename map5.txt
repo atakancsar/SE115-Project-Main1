@@ -6,6 +6,6 @@ A C 10
 C B 10
 B D 20
 C D 50
-C E 40
-D E 10
+C A 40
+D B 10
 A E
