@@ -98,16 +98,13 @@ public class WayFinder {
 
             String totalTime = "Total time:" + minCityWay[endCityIndex];
             try {
-                // Dosyayı oluştur veya üzerine yaz
                 FileWriter writer = new FileWriter("output.txt");
                 writer.write("--Minimum way direction--\n");
-                // Dosyaya yaz
                 for(int z = usedCitiesFixed.length-1; z >= 0; z-- ){
                     if (z==0) {writer.write(usedCitiesFixed[z]+"\n");}
                     else{writer.write(usedCitiesFixed[z] + "->");}
                 }
                 writer.write(totalTime);
-                // Kaynakları serbest bırak
                 System.out.println("Data written to output.txt file.");
                 writer.close();
             } catch (IOException e) {
