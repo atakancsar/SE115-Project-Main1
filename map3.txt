@@ -1,0 +1,13 @@
+7
+P Q R S T U V
+9
+P Q 15
+P R 25
+Q S 35
+Q T 20
+R S 50
+R U 40
+S V 10
+T U 30
+U V 5
+P V
