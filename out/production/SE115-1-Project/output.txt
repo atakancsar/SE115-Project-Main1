@@ -1,0 +1,3 @@
+--Minimum way of direction--
+P->Q->T->U->V
+Total time:60

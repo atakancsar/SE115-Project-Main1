@@ -1,0 +1,11 @@
+6
+A B C D Q E
+7
+A B 30
+Q E 40
+C E 40
+D E 10
+A C 10
+B D 25
+C D 50
+A E
